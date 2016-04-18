@@ -183,11 +183,11 @@ int main(){
 	cout.setf(ios::showpoint);
 	cout.precision(8);
 
-	string input_FILENAME = "/home/jt2798/SU2Gauge//SU2_beta_25_03.jks";
+	string input_FILENAME = "/home/jt2798/SU2-Pure-Gauge/SU2_beta_25_03.jks";
 	ifstream instream;
 	instream.open(input_FILENAME.c_str());
 
-	string output_FILENAME = "/home/jt2798/SU2Gauge/SU2_beta_25_VR_output_03.dat";
+	string output_FILENAME = "/home/jt2798/SU2-Pure-Gauge/SU2_beta_25_VR_output_03.dat";
 	ofstream outstream;
 	outstream.open(output_FILENAME.c_str(), ofstream::app);
 	outstream.setf(ios::fixed);
@@ -231,8 +231,9 @@ int main(){
 		dR[3] = vec[i][3];
 
 		double previous_VR = 0.;
+		int T_extent = 3 + ceil(sqrt(dR[1] * dR[1] + dR[2] * dR[2] + dR[3] * dR[3]));
 
-		for(int j = 3; j < 4; j++){
+		for(int j = T_extent; j < T_extent; j++){
 
 			measure_potential(instream, 20001, 30001, 20, 2.5, \
 				0.5, 10, dR, j, \

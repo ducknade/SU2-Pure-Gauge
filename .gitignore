@@ -1,2 +1,6 @@
 *.o
 *.out
+*.dat
+*.jks
+/source
+/output

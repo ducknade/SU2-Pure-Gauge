@@ -136,7 +136,7 @@ int main(){
 	//
 	// beta = 2.5;
 	//
-	// string FILENAME = "/home/jt2798/SU2Gauge/SU2_beta_25_03.jks";
+	// string FILENAME = "/home/jt2798/SU2-Pure-Gauge/source/SU2_beta_25_03.jks";
 	//
 	// ofstream outstream;
 	// outstream.open(FILENAME.c_str());
@@ -183,11 +183,11 @@ int main(){
 	cout.setf(ios::showpoint);
 	cout.precision(8);
 
-	string input_FILENAME = "/home/jt2798/SU2-Pure-Gauge/SU2_beta_25_03.jks";
+	string input_FILENAME = "/home/jt2798/SU2-Pure-Gauge/source/SU2_beta_25_03.jks";
 	ifstream instream;
 	instream.open(input_FILENAME.c_str());
 
-	string output_FILENAME = "/home/jt2798/SU2-Pure-Gauge/SU2_beta_25_VR_output_03.dat";
+	string output_FILENAME = "/home/jt2798/SU2-Pure-Gauge/output/SU2_beta_25_VR_output_03.dat";
 	ofstream outstream;
 	outstream.open(output_FILENAME.c_str(), ofstream::app);
 	outstream.setf(ios::fixed);

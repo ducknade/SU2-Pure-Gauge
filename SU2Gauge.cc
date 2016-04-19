@@ -233,7 +233,7 @@ int main(){
 		double previous_VR = 0.;
 		int T_extent = 3 + ceil(sqrt(dR[1] * dR[1] + dR[2] * dR[2] + dR[3] * dR[3]));
 
-		for(int j = T_extent; j < T_extent; j++){
+		for(int j = T_extent; j < T_extent + 1; j++){
 
 			measure_potential(instream, 20001, 30001, 20, 2.5, \
 				0.5, 10, dR, j, \

@@ -10,7 +10,7 @@
 
 date
 
-/home/jt2798/SU2-Pure-Gauge/SU2Gauge
+/home/jt2798/SU2-Pure-Gauge/SU2Gauge.out
 
 date
 
